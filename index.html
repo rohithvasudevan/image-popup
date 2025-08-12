@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Holiday List</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    button {
+        background-color: #0078d4;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #005a9e;
+    }
+</style>
+<script>
+function openImagePopup() {
+    // Replace with your image URL
+    var imageUrl = "https://via.placeholder.com/800x600.png?text=Sample+Image";
+
+    // Open a new small window with the image
+    var popup = window.open("", "ImageWindow", "width=820,height=640");
+    popup.document.write(`
+        <html>
+        <head><title>Holiday List</title></head>
+        <body style="margin:0; background:#000; display:flex; justify-content:center; align-items:center; height:100%;">
+            <img src="HL-25.jpg" style="max-width:100%; max-height:100%;" />
+        </body>
+        </html>
+    `);
+}
+</script>
+</head>
+<body>
+<button onclick="openImagePopup()">📷 View Holidays</button>
+</body>
+</html>
